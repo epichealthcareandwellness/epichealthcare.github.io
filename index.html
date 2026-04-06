@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>EPIC Healthcare &amp; Wellness Solutions | Medical Spa &amp; Aesthetics Collective</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -150,7 +153,7 @@ section{padding:80px 40px;}
 .svc-price-row span{font-size:12px;color:var(--text-dark);}
 .svc-price{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--navy);font-weight:600;white-space:nowrap;}
 .svc-list{background:var(--cream);border-radius:4px;border:1px solid rgba(0,50,75,0.1);padding:14px 16px;font-size:12px;color:#2a4a5a;line-height:2.1;margin-bottom:16px;}
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease;}
+.reveal{opacity:1;transform:none;transition:opacity .7s ease,transform .7s ease;}
 .reveal.visible{opacity:1;transform:none;}
 @media(max-width:900px){
   nav{padding:12px 20px;}
@@ -166,6 +169,15 @@ section{padding:80px 40px;}
   .dpc-grid{grid-template-columns:repeat(2,1fr);}
   .form-row{grid-template-columns:1fr;}
 }
+
+.sec-gallery{background:linear-gradient(160deg,#ddeef5,#eef6fa);padding:80px 40px;}
+.sec-testimonials{background:linear-gradient(160deg,#f8f5f0,#f0ebe0);padding:80px 40px;overflow:hidden;}
+.sec-owner{background:linear-gradient(160deg,#f8f5f0,#eef6fa);padding:80px 40px;}
+.sec-insurance{background:linear-gradient(160deg,#eef6fa,#ddeef5);text-align:center;padding:80px 40px;}
+.sec-telehealth{background:linear-gradient(135deg,#fdf0d0,#f5e6c0);text-align:center;padding:80px 40px;}
+.sec-documents{background:linear-gradient(160deg,#fdefc0,#f5e0a0);padding:80px 40px;}
+.sec-faq{background:linear-gradient(160deg,#eef6fa,#f5f0e8);padding:80px 40px;}
+.sec-contact{background:linear-gradient(160deg,#eef6fa,#f8f5f0);padding:80px 40px;}
 </style>
 </head>
 <body>
@@ -391,7 +403,7 @@ section{padding:80px 40px;}
   </div>
 </section>
 <!-- GALLERY -->
-<section style="background:linear-gradient(160deg,#ddeef5,#eef6fa);padding:80px 40px;" id="gallery">
+<section id="gallery" class="sec-gallery">
   <div class="max-w">
     <div class="reveal">
       <div class="section-label">Our Services</div>
@@ -410,7 +422,7 @@ section{padding:80px 40px;}
 </section>
 
 <!-- TESTIMONIALS -->
-<section style="background:linear-gradient(160deg,#f8f5f0,#f0ebe0);padding:80px 40px;overflow:hidden;" id="testimonials">
+<section id="testimonials" class="sec-testimonials">
   <div class="max-w">
     <div class="reveal"><div class="section-label">Patient Stories</div><h2 class="section-title">What Our <em>Patients</em> Say</h2><p class="section-desc">Real experiences from real members of our community.</p></div>
     <div style="position:relative;margin-top:48px;overflow:hidden;" class="reveal">
@@ -432,7 +444,7 @@ section{padding:80px 40px;}
 </section>
 
 <!-- OWNER -->
-<section style="background:linear-gradient(160deg,#f8f5f0,#eef6fa);padding:80px 40px;" id="owner">
+<section id="owner" class="sec-owner">
   <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1.6fr;gap:64px;align-items:start;">
     <div class="reveal">
       <div style="width:100%;aspect-ratio:3/4;background:linear-gradient(145deg,#001932,#00324b);border-radius:8px;position:relative;overflow:hidden;box-shadow:0 20px 60px rgba(0,25,50,0.2);">
@@ -499,7 +511,7 @@ section{padding:80px 40px;}
   </div>
 </div>
 <!-- INSURANCE -->
-<section style="background:linear-gradient(160deg,#eef6fa,#ddeef5);text-align:center;padding:80px 40px;" id="insurance">
+<section id="insurance" class="sec-insurance">
   <div class="max-w"><div class="reveal center">
     <div class="section-label">Coverage</div>
     <h2 class="section-title">We Accept Your <em>Insurance</em></h2>
@@ -518,7 +530,7 @@ section{padding:80px 40px;}
 </section>
 
 <!-- TELEHEALTH -->
-<section style="background:linear-gradient(135deg,#fdf0d0,#f5e6c0);text-align:center;padding:80px 40px;" id="telehealth">
+<section id="telehealth" class="sec-telehealth">
   <div class="max-w"><div class="reveal center">
     <div class="section-label">Virtual Care</div>
     <h2 class="section-title">Telehealth Across <em>Eight States</em></h2>
@@ -541,7 +553,7 @@ section{padding:80px 40px;}
 </section>
 
 <!-- DOCUMENTS -->
-<section style="background:linear-gradient(160deg,#fdefc0,#f5e0a0);padding:80px 40px;" id="documents">
+<section id="documents" class="sec-documents">
   <div class="max-w">
     <div class="reveal"><div class="section-label">Patient Documents</div><h2 class="section-title">Forms, Consents &amp; <em>Documents</em></h2><p class="section-desc">Complete all required paperwork before your visit for seamless care.</p></div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px;">
@@ -557,7 +569,7 @@ section{padding:80px 40px;}
 </section>
 
 <!-- FAQ -->
-<section style="background:linear-gradient(160deg,#eef6fa,#f5f0e8);padding:80px 40px;" id="faq">
+<section id="faq" class="sec-faq">
   <div class="max-w">
     <div class="reveal"><div class="section-label">Questions</div><h2 class="section-title">Frequently Asked <em>Questions</em></h2></div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 40px;margin-top:44px;" class="reveal">
@@ -578,7 +590,7 @@ section{padding:80px 40px;}
 </section>
 
 <!-- HOURS & CONTACT -->
-<section style="background:linear-gradient(160deg,#eef6fa,#f8f5f0);padding:80px 40px;" id="contact">
+<section id="contact" class="sec-contact">
   <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;">
     <div class="reveal">
       <div class="section-label">Availability</div>
@@ -833,7 +845,7 @@ function toggleNav(){document.getElementById('navLinks').classList.toggle('open'
 function openM(id){document.getElementById(id).classList.add('open');document.body.style.overflow='hidden';}
 function closeM(id){document.getElementById(id).classList.remove('open');document.body.style.overflow='';}
 document.querySelectorAll('.modal-overlay').forEach(o=>o.addEventListener('click',e=>{if(e.target===o)closeM(o.id);}));
-document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.modal-overlay.open').forEach(m=>closeM(m.id));}));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.modal-overlay.open').forEach(m=>closeM(m.id));});
 
 async function submitForm(fId,dId,nameId,phoneId){
   const nameEl=document.getElementById(nameId);
@@ -847,7 +859,7 @@ async function submitForm(fId,dId,nameId,phoneId){
   const formEl=document.getElementById(fId);
   const names={schForm:'Schedule Appointment',enrollForm:'New Patient Enrollment',insForm:'Insurance Verification'};
   const data=new FormData();
-  data.append('_subject','EPIC Healthcare — '+(names[fId]||fId)+' Submission');
+  data.append('_subject','EPIC Healthcare - '+(names[fId]||fId)+' Submission');
   data.append('_replyto','epichealthcareandwellness@gmail.com');
   data.append('Form Type',names[fId]||fId);
   data.append('Submitted At',new Date().toLocaleString());
@@ -861,8 +873,8 @@ async function submitForm(fId,dId,nameId,phoneId){
   try{
     const res=await fetch('https://formspree.io/f/xbdpakop',{method:'POST',body:data,headers:{'Accept':'application/json'}});
     if(res.ok){formEl.style.display='none';document.getElementById(dId).style.display='block';}
-    else{if(btn){btn.textContent='Submit →';btn.disabled=false;}alert('Error. Please call (636) 789-1499.');}
-  }catch(e){if(btn){btn.textContent='Submit →';btn.disabled=false;}alert('Network error. Please try again.');}
+    else{if(btn){btn.textContent='Submit';btn.disabled=false;}alert('Error. Please call (636) 789-1499.');}
+  }catch(e){if(btn){btn.textContent='Submit';btn.disabled=false;}alert('Network error. Please try again.');}
 }
 
 async function submitConsentForm(fId,dId,nameId,phoneId,sigId,checkId){
@@ -880,7 +892,7 @@ async function submitConsentForm(fId,dId,nameId,phoneId,sigId,checkId){
   const formEl=document.getElementById(fId);
   const names={consentForm:'Treatment Consent',hipaaForm:'HIPAA Acknowledgment',medspaForm:'Aesthetic Services Consent'};
   const data=new FormData();
-  data.append('_subject','EPIC Healthcare — '+(names[fId]||fId)+' Submission');
+  data.append('_subject','EPIC Healthcare - '+(names[fId]||fId)+' Submission');
   data.append('_replyto','epichealthcareandwellness@gmail.com');
   data.append('Form Type',names[fId]||fId);
   data.append('Submitted At',new Date().toLocaleString());
@@ -894,8 +906,8 @@ async function submitConsentForm(fId,dId,nameId,phoneId,sigId,checkId){
   try{
     const res=await fetch('https://formspree.io/f/xbdpakop',{method:'POST',body:data,headers:{'Accept':'application/json'}});
     if(res.ok){formEl.style.display='none';document.getElementById(dId).style.display='block';}
-    else{if(btn){btn.textContent='Submit →';btn.disabled=false;}alert('Error. Please call (636) 789-1499.');}
-  }catch(e){if(btn){btn.textContent='Submit →';btn.disabled=false;}alert('Network error.');}
+    else{if(btn){btn.textContent='Submit';btn.disabled=false;}alert('Error. Please call (636) 789-1499.');}
+  }catch(e){if(btn){btn.textContent='Submit';btn.disabled=false;}alert('Network error.');}
 }
 
 let curStep=0;
@@ -927,15 +939,15 @@ async function finishScreening(){
   document.getElementById('stepLbl').textContent='Thank you!';
   document.querySelector('#screeningM .step-bar').style.display='none';
   const data=new FormData();
-  data.append('_subject','EPIC Healthcare — Health & Wellness Screening');
+  data.append('_subject','EPIC Healthcare - Health Wellness Screening');
   data.append('_replyto','epichealthcareandwellness@gmail.com');
-  data.append('Form Type','Health & Wellness Screening');
+  data.append('Form Type','Health Wellness Screening');
   data.append('Submitted At',new Date().toLocaleString());
   document.querySelectorAll('#ss0 input:checked,#ss1 input:checked,#ss2 input:checked').forEach(el=>data.append(el.name||'answer',el.value||'checked'));
-  if(nameEl?.value)data.append('Name',nameEl.value);
-  if(phoneEl?.value)data.append('Phone',phoneEl.value);
+  if(nameEl&&nameEl.value)data.append('Name',nameEl.value);
+  if(phoneEl&&phoneEl.value)data.append('Phone',phoneEl.value);
   const emailEl=document.querySelector('#ss3 input[type="email"]');
-  if(emailEl?.value)data.append('Email',emailEl.value);
+  if(emailEl&&emailEl.value)data.append('Email',emailEl.value);
   try{await fetch('https://formspree.io/f/xbdpakop',{method:'POST',body:data,headers:{'Accept':'application/json'}});}catch(e){}
 }
 
@@ -949,12 +961,12 @@ async function submitGAD7(){
   if(!nameEl||!nameEl.value.trim()){if(nameEl)nameEl.classList.add('error');valid=false;}
   if(!phoneEl||!phoneEl.value.trim()){if(phoneEl)phoneEl.classList.add('error');valid=false;}
   const selects=['gad1','gad2','gad3','gad4','gad5','gad6','gad7q'];
-  const allFilled=selects.every(id=>{const el=document.getElementById(id);return el&&el.value!=='';}); 
-  if(!valid||!allFilled||!consentEl?.checked){
+  const allFilled=selects.every(id=>{const el=document.getElementById(id);return el&&el.value!=='';});
+  if(!valid||!allFilled||!consentEl||!consentEl.checked){
     let msg=[];
     if(!valid)msg.push('name and phone');
     if(!allFilled)msg.push('all 7 questions');
-    if(!consentEl?.checked)msg.push('consent checkbox');
+    if(!consentEl||!consentEl.checked)msg.push('consent checkbox');
     alert('Please complete: '+msg.join(', ')+'.');
     return;
   }
@@ -962,7 +974,7 @@ async function submitGAD7(){
   selects.forEach(id=>{const el=document.getElementById(id);if(el&&el.value)total+=parseInt(el.value);});
   const sev=total<=4?'Minimal':total<=9?'Mild':total<=14?'Moderate':'Severe';
   const data=new FormData();
-  data.append('_subject','EPIC Healthcare — GAD-7 Assessment');
+  data.append('_subject','EPIC Healthcare - GAD-7 Assessment');
   data.append('_replyto','epichealthcareandwellness@gmail.com');
   data.append('Patient Name',nameEl.value);
   data.append('Phone',phoneEl.value);
@@ -970,7 +982,7 @@ async function submitGAD7(){
   data.append('SEVERITY',sev+' Anxiety');
   data.append('Submitted At',new Date().toLocaleString());
   const lbls={gad1:'Nervous/anxious',gad2:'Unable to control worrying',gad3:'Worrying too much',gad4:'Trouble relaxing',gad5:'Restless',gad6:'Easily annoyed',gad7q:'Feeling afraid'};
-  selects.forEach(id=>{const el=document.getElementById(id);data.append(lbls[id]||id,el?.options[el.selectedIndex]?.text||'');});
+  selects.forEach(id=>{const el=document.getElementById(id);data.append(lbls[id]||id,el&&el.options?el.options[el.selectedIndex].text:'');});
   const btn=document.querySelector('#gad7Form .form-submit');
   if(btn){btn.textContent='Sending...';btn.disabled=true;}
   try{
@@ -978,19 +990,32 @@ async function submitGAD7(){
     if(res.ok){
       document.getElementById('gad7Form').style.display='none';
       const d=document.getElementById('gad7Done');d.style.display='block';
-      document.getElementById('gad7ResultText').innerHTML='Your GAD-7 score is <strong>'+total+'/21 — '+sev+' Anxiety</strong>.<br><br>Results sent to Dr. Michelle Grimes.<br><br>If in crisis, call <strong>988</strong> or <strong>(636) 789-1499</strong>.';
-    }else{if(btn){btn.textContent='Submit Assessment →';btn.disabled=false;}alert('Error. Please call (636) 789-1499.');}
-  }catch(e){if(btn){btn.textContent='Submit Assessment →';btn.disabled=false;}alert('Network error.');}
+      document.getElementById('gad7ResultText').innerHTML='Your GAD-7 score is <strong>'+total+'/21 - '+sev+' Anxiety</strong>.<br><br>Results sent to Dr. Michelle Grimes.<br><br>If in crisis, call <strong>988</strong> or <strong>(636) 789-1499</strong>.';
+    }else{if(btn){btn.textContent='Submit Assessment';btn.disabled=false;}alert('Error. Please call (636) 789-1499.');}
+  }catch(e){if(btn){btn.textContent='Submit Assessment';btn.disabled=false;}alert('Network error.');}
 }
 
 let carIdx=0;
 const totalCards=document.querySelectorAll('#carouselTrack > div').length;
 const dotsC=document.getElementById('carouselDots');
 const vc=()=>window.innerWidth<900?1:3;
-function buildDots(){dotsC.innerHTML='';const pages=Math.ceil(totalCards/vc());for(let i=0;i<pages;i++){const d=document.createElement('div');d.style.cssText='width:7px;height:7px;border-radius:50%;background:'+(i===0?'rgba(0,25,50,0.6)':'rgba(0,25,50,0.18)')+';cursor:pointer;';d.onclick=()=>{carIdx=i;updateC();};dotsC.appendChild(d);}}
-function updateC(){const v=vc();document.getElementById('carouselTrack').style.transform='translateX(-'+(carIdx*(100/v))+'%)';document.querySelectorAll('#carouselDots > div').forEach((d,i)=>d.style.background=i===carIdx?'rgba(0,25,50,0.6)':'rgba(0,25,50,0.18)');}
+function buildDots(){
+  dotsC.innerHTML='';
+  const pages=Math.ceil(totalCards/vc());
+  for(let i=0;i<pages;i++){
+    const d=document.createElement('div');
+    d.style.cssText='width:7px;height:7px;border-radius:50%;background:'+(i===0?'rgba(0,25,50,0.6)':'rgba(0,25,50,0.18)')+';cursor:pointer;transition:background .3s;';
+    d.onclick=(()=>{const idx=i;return()=>{carIdx=idx;updateC();}})();
+    dotsC.appendChild(d);
+  }
+}
+function updateC(){
+  const v=vc();
+  document.getElementById('carouselTrack').style.transform='translateX(-'+(carIdx*(100/v))+'%)';
+  document.querySelectorAll('#carouselDots > div').forEach((d,i)=>d.style.background=i===carIdx?'rgba(0,25,50,0.6)':'rgba(0,25,50,0.18)');
+}
 function moveCarousel(dir){const pages=Math.ceil(totalCards/vc());carIdx=(carIdx+dir+pages)%pages;updateC();}
-);updateC();}
+window.addEventListener('load',()=>{buildDots();updateC();});
 window.addEventListener('resize',()=>{carIdx=0;buildDots();updateC();});
 setInterval(()=>moveCarousel(1),5000);
 
